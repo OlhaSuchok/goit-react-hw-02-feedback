@@ -7,7 +7,7 @@ export const FeedbackOptionsList = styled.ul`
   padding-left: 0;
   padding-top: 0;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   list-style: none;
 `;
 export const FeedbackButtonItem = styled.li`
@@ -16,7 +16,7 @@ export const FeedbackButtonItem = styled.li`
 
 export const FeedbackButton = styled.button`
   padding: 6px 10px;
-  width: 70px;
+  width: 68px;
   color: ${props => props.theme.colors.accent};
   background-color: ${props => props.theme.colors.primary};
   border-radius: 4px;
@@ -31,7 +31,7 @@ export const FeedbackButton = styled.button`
 
   &:hover,
   &:focus {
-    background-color: #7fffd4;
+    background-color: ${props => props.theme.colors.hover};
     box-shadow: none;
   }
 `;

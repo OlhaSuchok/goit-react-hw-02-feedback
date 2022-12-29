@@ -4,6 +4,9 @@ import {
   StatisticsTitle,
   StatisticsItem,
   StatisticsList,
+  StatisticsValueText,
+  StatisticsValueTotal,
+  StatisticsValuePercentage,
 } from './Statistics.styled';
 
 export default function Statistics({
@@ -17,12 +20,23 @@ export default function Statistics({
     <StatisticsWrapper>
       <StatisticsTitle>Statistics</StatisticsTitle>
       <StatisticsList>
-        <StatisticsItem>Good: {good}</StatisticsItem>
-        <StatisticsItem>Neutral: {neutral}</StatisticsItem>
-        <StatisticsItem>Bad: {bad}</StatisticsItem>
-        <StatisticsItem>Total: {total}</StatisticsItem>
         <StatisticsItem>
-          PositivePercentage: {positivePercentage}%
+          Good: <StatisticsValueText>{good}</StatisticsValueText>
+        </StatisticsItem>
+        <StatisticsItem>
+          Neutral: <StatisticsValueText>{neutral}</StatisticsValueText>
+        </StatisticsItem>
+        <StatisticsItem>
+          Bad: <StatisticsValueText>{bad}</StatisticsValueText>
+        </StatisticsItem>
+        <StatisticsItem>
+          Total: <StatisticsValueTotal>{total}</StatisticsValueTotal>
+        </StatisticsItem>
+        <StatisticsItem>
+          PositivePercentage:{' '}
+          <StatisticsValuePercentage>
+            {positivePercentage}%
+          </StatisticsValuePercentage>
         </StatisticsItem>
       </StatisticsList>
     </StatisticsWrapper>

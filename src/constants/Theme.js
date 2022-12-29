@@ -5,6 +5,9 @@ export const theme = Object.freeze({
     accent: '#ffffff',
     mainText: '#2a2a2a',
     border: '#C0C0C0',
+    hover: '#7fffd4',
+    third: '#DDA0DD',
+    yellow: '#FF0000',
   },
 
   fontSizes: {
@@ -13,5 +16,5 @@ export const theme = Object.freeze({
     l: '20px',
   },
 
-  space: [0, 2, 4, 6, 8, 16, 20, 32, 64],
+  space: [0, 2, 4, 6, 8, 16, 20, 32, 64, 68],
 });

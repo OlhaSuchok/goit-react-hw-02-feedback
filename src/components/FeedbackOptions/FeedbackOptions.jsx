@@ -4,7 +4,6 @@ import {
   FeedbackOptionsList,
   FeedbackButtonItem,
   FeedbackButton,
-  FeedbackButtonText,
 } from './FeedbackOptions.styled';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
@@ -17,7 +16,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
             type="button"
             onClick={onLeaveFeedback}
           >
-            <FeedbackButtonText>{elem}</FeedbackButtonText>
+            {elem}
           </FeedbackButton>
         ))}
       </FeedbackButtonItem>

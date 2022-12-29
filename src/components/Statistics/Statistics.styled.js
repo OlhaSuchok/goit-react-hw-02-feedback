@@ -30,3 +30,20 @@ export const StatisticsItem = styled.li`
     margin-bottom: 8px;
   }
 `;
+
+export const StatisticsValueText = styled.span`
+  color: ${props => props.theme.colors.primary};
+  font-size: 24px;
+  font-weight: 600;
+`;
+
+export const StatisticsValueTotal = styled.span`
+  color: ${props => props.theme.colors.yellow};
+  font-size: 24px;
+  font-weight: 600;
+`;
+export const StatisticsValuePercentage = styled.span`
+  color: ${props => props.theme.colors.third};
+  font-size: 24px;
+  font-weight: 600;
+`;
