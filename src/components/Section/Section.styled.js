@@ -6,8 +6,8 @@ export const SectionWrapper = styled.div`
 
 export const SectionTitle = styled.h2`
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: ${props => props.theme.space[0]}px;
+  margin-bottom: ${props => props.theme.space[0]}px;
   color: ${props => props.theme.colors.mainText};
-  font-size: 28px;
+  font-size: ${props => props.theme.space[6]}px;
 `;

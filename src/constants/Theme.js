@@ -6,15 +6,22 @@ export const theme = Object.freeze({
     mainText: '#2a2a2a',
     border: '#C0C0C0',
     hover: '#7fffd4',
-    third: '#DDA0DD',
-    yellow: '#FF0000',
+    pink: '#DDA0DD',
+    red: '#FF0000',
+    blue: '#4682B4',
   },
 
   fontSizes: {
-    s: '16px',
-    m: '18px',
-    l: '20px',
+    s: '20px',
+    m: '24px',
+    l: '28px',
   },
 
-  space: [0, 2, 4, 6, 8, 16, 20, 32, 64, 68],
+  fontWeights: {
+    title: '700px',
+    text: '600px',
+    button: '500px',
+  },
+
+  space: [0, 2, 4, 8, 16, 20, 28, 32, 64, 68, 84],
 });
